@@ -21,5 +21,13 @@ namespace Finals
         {
 
         }
+
+        private void BtnLogIn_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.FormClosed += (s, args) => this.Close();
+            dashboard.Show();
+        }
+        
     }
 }
