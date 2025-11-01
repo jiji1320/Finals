@@ -41,10 +41,8 @@
             this.btnMyProfile = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -239,32 +237,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
-            this.panel3.Controls.Add(this.btnMenu);
             this.panel3.Location = new System.Drawing.Point(307, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1029, 52);
             this.panel3.TabIndex = 26;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Animated = true;
-            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMenu.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnMenu.Size = new System.Drawing.Size(139, 52);
-            this.btnMenu.TabIndex = 21;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Customers
             // 
@@ -277,7 +253,6 @@
             this.Text = "Customers";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -296,6 +271,5 @@
         private Guna.UI2.WinForms.Guna2Button btnMyProfile;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button btnMenu;
     }
 }

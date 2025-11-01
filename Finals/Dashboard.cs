@@ -33,5 +33,18 @@ namespace Finals
             myprofile.FormClosed += (s, args) => this.Close();
             myprofile.Show();
         }
+
+      
+        private void btnSlide_Click_1(object sender, EventArgs e)
+        {
+            if(MenuVertical.Width == 230)
+            {
+                MenuVertical.Width = 40;
+            }
+            else
+            {
+                MenuVertical.Width = 230;
+            }
+        }
     }
 }

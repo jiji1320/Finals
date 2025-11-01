@@ -26,5 +26,24 @@ namespace Finals
         {
 
         }
+
+        private void btnSlide_Click(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 230)
+            {
+                MenuVertical.Width = 40;
+            }
+            else
+            {
+                MenuVertical.Width = 230;
+            }
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.FormClosed += (s, args) => this.Close();
+            dashboard.Show();
+        }
     }
 }

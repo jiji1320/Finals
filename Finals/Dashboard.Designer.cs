@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MenuVertical = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnSignOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnMaterials = new Guna.UI2.WinForms.Guna2Button();
             this.btnCustomers = new Guna.UI2.WinForms.Guna2Button();
@@ -56,19 +57,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.Titlebar = new System.Windows.Forms.Panel();
+            this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tbUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tbUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1.SuspendLayout();
+            this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,30 +79,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.Titlebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // MenuVertical
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.btnSignOut);
-            this.panel1.Controls.Add(this.btnMaterials);
-            this.panel1.Controls.Add(this.btnCustomers);
-            this.panel1.Controls.Add(this.btnReport);
-            this.panel1.Controls.Add(this.btnProducts);
-            this.panel1.Controls.Add(this.btnSalesHistory);
-            this.panel1.Controls.Add(this.btnMyProfile);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 733);
-            this.panel1.TabIndex = 0;
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
+            this.MenuVertical.Controls.Add(this.pictureBox8);
+            this.MenuVertical.Controls.Add(this.btnSignOut);
+            this.MenuVertical.Controls.Add(this.btnMaterials);
+            this.MenuVertical.Controls.Add(this.btnCustomers);
+            this.MenuVertical.Controls.Add(this.btnReport);
+            this.MenuVertical.Controls.Add(this.btnProducts);
+            this.MenuVertical.Controls.Add(this.btnSalesHistory);
+            this.MenuVertical.Controls.Add(this.btnMyProfile);
+            this.MenuVertical.Controls.Add(this.btnDashboard);
+            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Name = "MenuVertical";
+            this.MenuVertical.Size = new System.Drawing.Size(307, 733);
+            this.MenuVertical.TabIndex = 0;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(277, 124);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 21;
+            this.pictureBox8.TabStop = false;
             // 
             // btnSignOut
             // 
@@ -118,7 +128,7 @@
             this.btnSignOut.Location = new System.Drawing.Point(0, 599);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnSignOut.Size = new System.Drawing.Size(307, 67);
+            this.btnSignOut.Size = new System.Drawing.Size(301, 67);
             this.btnSignOut.TabIndex = 8;
             this.btnSignOut.Text = "Sign Out";
             // 
@@ -137,7 +147,7 @@
             this.btnMaterials.Location = new System.Drawing.Point(0, 533);
             this.btnMaterials.Name = "btnMaterials";
             this.btnMaterials.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnMaterials.Size = new System.Drawing.Size(307, 69);
+            this.btnMaterials.Size = new System.Drawing.Size(301, 69);
             this.btnMaterials.TabIndex = 7;
             this.btnMaterials.Text = "Materials";
             // 
@@ -156,7 +166,7 @@
             this.btnCustomers.Location = new System.Drawing.Point(0, 467);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnCustomers.Size = new System.Drawing.Size(307, 69);
+            this.btnCustomers.Size = new System.Drawing.Size(301, 69);
             this.btnCustomers.TabIndex = 6;
             this.btnCustomers.Text = "Customers";
             // 
@@ -175,7 +185,7 @@
             this.btnReport.Location = new System.Drawing.Point(0, 395);
             this.btnReport.Name = "btnReport";
             this.btnReport.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnReport.Size = new System.Drawing.Size(307, 72);
+            this.btnReport.Size = new System.Drawing.Size(301, 72);
             this.btnReport.TabIndex = 5;
             this.btnReport.Text = "Report";
             // 
@@ -194,7 +204,7 @@
             this.btnProducts.Location = new System.Drawing.Point(0, 329);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnProducts.Size = new System.Drawing.Size(307, 69);
+            this.btnProducts.Size = new System.Drawing.Size(301, 69);
             this.btnProducts.TabIndex = 4;
             this.btnProducts.Text = "Products";
             // 
@@ -213,7 +223,7 @@
             this.btnSalesHistory.Location = new System.Drawing.Point(0, 260);
             this.btnSalesHistory.Name = "btnSalesHistory";
             this.btnSalesHistory.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnSalesHistory.Size = new System.Drawing.Size(307, 73);
+            this.btnSalesHistory.Size = new System.Drawing.Size(301, 73);
             this.btnSalesHistory.TabIndex = 3;
             this.btnSalesHistory.Text = "Sales History";
             // 
@@ -232,7 +242,7 @@
             this.btnMyProfile.Location = new System.Drawing.Point(0, 194);
             this.btnMyProfile.Name = "btnMyProfile";
             this.btnMyProfile.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnMyProfile.Size = new System.Drawing.Size(307, 70);
+            this.btnMyProfile.Size = new System.Drawing.Size(301, 70);
             this.btnMyProfile.TabIndex = 2;
             this.btnMyProfile.Text = "My Profile";
             this.btnMyProfile.Click += new System.EventHandler(this.btnMyProfile_Click);
@@ -252,7 +262,7 @@
             this.btnDashboard.Location = new System.Drawing.Point(0, 123);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnDashboard.Size = new System.Drawing.Size(307, 71);
+            this.btnDashboard.Size = new System.Drawing.Size(298, 71);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Dashboard";
             // 
@@ -448,64 +458,70 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "label4";
             // 
-            // panel3
+            // Titlebar
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
-            this.panel3.Controls.Add(this.btnMenu);
-            this.panel3.Location = new System.Drawing.Point(307, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1028, 52);
-            this.panel3.TabIndex = 2;
+            this.Titlebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
+            this.Titlebar.Controls.Add(this.btnSlide);
+            this.Titlebar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Titlebar.Location = new System.Drawing.Point(307, 0);
+            this.Titlebar.Name = "Titlebar";
+            this.Titlebar.Size = new System.Drawing.Size(1029, 52);
+            this.Titlebar.TabIndex = 2;
             // 
-            // btnMenu
+            // btnSlide
             // 
-            this.btnMenu.Animated = true;
-            this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMenu.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
-            this.btnMenu.Size = new System.Drawing.Size(139, 52);
-            this.btnMenu.TabIndex = 21;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnMenu.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
-            this.panel4.Location = new System.Drawing.Point(0, 663);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(307, 70);
-            this.panel4.TabIndex = 21;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(307, 124);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 21;
-            this.pictureBox8.TabStop = false;
+            this.btnSlide.Image = ((System.Drawing.Image)(resources.GetObject("btnSlide.Image")));
+            this.btnSlide.Location = new System.Drawing.Point(0, 12);
+            this.btnSlide.Name = "btnSlide";
+            this.btnSlide.Size = new System.Drawing.Size(51, 33);
+            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSlide.TabIndex = 0;
+            this.btnSlide.TabStop = false;
+            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click_1);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.tbUsername);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Location = new System.Drawing.Point(342, 230);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(959, 465);
             this.panel2.TabIndex = 21;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(57, 30);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(268, 101);
+            this.panel6.TabIndex = 8;
+            // 
+            // tbUsername
+            // 
+            this.tbUsername.Animated = true;
+            this.tbUsername.AutoRoundedCorners = true;
+            this.tbUsername.BackColor = System.Drawing.Color.Gray;
+            this.tbUsername.BorderColor = System.Drawing.Color.Gray;
+            this.tbUsername.BorderRadius = 18;
+            this.tbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUsername.DefaultText = "";
+            this.tbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.tbUsername.ForeColor = System.Drawing.Color.Black;
+            this.tbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Location = new System.Drawing.Point(775, 129);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceholderText = "Search...";
+            this.tbUsername.SelectedText = "";
+            this.tbUsername.Size = new System.Drawing.Size(173, 39);
+            this.tbUsername.TabIndex = 7;
             // 
             // panel5
             // 
@@ -519,6 +535,28 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(960, 40);
             this.panel5.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(869, 12);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Date";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(664, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 20);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Total Amount";
             // 
             // label1
             // 
@@ -555,53 +593,6 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Total Product";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(869, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Date";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(664, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 20);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Total Amount";
-            // 
-            // tbUsername
-            // 
-            this.tbUsername.Animated = true;
-            this.tbUsername.AutoRoundedCorners = true;
-            this.tbUsername.BackColor = System.Drawing.Color.Gray;
-            this.tbUsername.BorderColor = System.Drawing.Color.Gray;
-            this.tbUsername.BorderRadius = 18;
-            this.tbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbUsername.DefaultText = "";
-            this.tbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.tbUsername.ForeColor = System.Drawing.Color.Black;
-            this.tbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbUsername.Location = new System.Drawing.Point(775, 129);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.PlaceholderText = "Search...";
-            this.tbUsername.SelectedText = "";
-            this.tbUsername.Size = new System.Drawing.Size(173, 39);
-            this.tbUsername.TabIndex = 7;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -627,11 +618,12 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Titlebar);
+            this.Controls.Add(this.MenuVertical);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
-            this.panel1.ResumeLayout(false);
+            this.MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -641,8 +633,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.Titlebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -653,7 +645,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel MenuVertical;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button btnCustomers;
         private Guna.UI2.WinForms.Guna2Button btnReport;
@@ -680,9 +672,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button btnMenu;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Titlebar;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
@@ -692,5 +682,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2TextBox tbUsername;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox btnSlide;
     }
 }
