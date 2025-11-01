@@ -16,5 +16,17 @@ namespace Finals
         {
             InitializeComponent();
         }
+
+        private void btnSlide_Click(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 230)
+            {
+                MenuVertical.Width = 40;
+            }
+            else
+            {
+                MenuVertical.Width = 230;
+            }
+        }
     }
 }

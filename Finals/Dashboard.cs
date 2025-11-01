@@ -30,7 +30,7 @@ namespace Finals
         private void btnMyProfile_Click(object sender, EventArgs e)
         {
             MyProfile myprofile = new MyProfile();
-            myprofile.FormClosed += (s, args) => this.Close();
+            myprofile.FormClosed += (s, args) => this.Hide();
             myprofile.Show();
         }
 
