@@ -168,12 +168,13 @@
             this.BtnLogIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BtnLogIn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.BtnLogIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnLogIn.FillColor = System.Drawing.Color.Silver;
-            this.BtnLogIn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BtnLogIn.FillColor = System.Drawing.Color.Black;
+            this.BtnLogIn.FillColor2 = System.Drawing.Color.Black;
             this.BtnLogIn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.BtnLogIn.ForeColor = System.Drawing.Color.White;
             this.BtnLogIn.Location = new System.Drawing.Point(476, 438);
             this.BtnLogIn.Name = "BtnLogIn";
+            this.BtnLogIn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(223)))), ((int)(((byte)(207)))));
             this.BtnLogIn.Size = new System.Drawing.Size(143, 31);
             this.BtnLogIn.TabIndex = 9;
             this.BtnLogIn.Text = "LOGIN";
