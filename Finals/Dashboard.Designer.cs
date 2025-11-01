@@ -49,7 +49,7 @@
             this.lblRevenue = new System.Windows.Forms.Label();
             this.lbltoday2 = new System.Windows.Forms.Label();
             this.lblCustomers = new System.Windows.Forms.Label();
-            this.lbltoday3 = new System.Windows.Forms.Label();
+            this.lblAllTime = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,14 @@
             this.btnMenu = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -72,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -225,6 +235,7 @@
             this.btnMyProfile.Size = new System.Drawing.Size(307, 70);
             this.btnMyProfile.TabIndex = 2;
             this.btnMyProfile.Text = "My Profile";
+            this.btnMyProfile.Click += new System.EventHandler(this.btnMyProfile_Click);
             // 
             // btnDashboard
             // 
@@ -362,17 +373,17 @@
             this.lblCustomers.TabIndex = 13;
             this.lblCustomers.Text = "Customers";
             // 
-            // lbltoday3
+            // lblAllTime
             // 
-            this.lbltoday3.AutoSize = true;
-            this.lbltoday3.BackColor = System.Drawing.Color.Gray;
-            this.lbltoday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltoday3.ForeColor = System.Drawing.Color.Black;
-            this.lbltoday3.Location = new System.Drawing.Point(1190, 104);
-            this.lbltoday3.Name = "lbltoday3";
-            this.lbltoday3.Size = new System.Drawing.Size(59, 20);
-            this.lbltoday3.TabIndex = 14;
-            this.lbltoday3.Text = "Today";
+            this.lblAllTime.AutoSize = true;
+            this.lblAllTime.BackColor = System.Drawing.Color.Gray;
+            this.lblAllTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllTime.ForeColor = System.Drawing.Color.Black;
+            this.lblAllTime.Location = new System.Drawing.Point(1190, 104);
+            this.lblAllTime.Name = "lblAllTime";
+            this.lblAllTime.Size = new System.Drawing.Size(78, 20);
+            this.lblAllTime.TabIndex = 14;
+            this.lblAllTime.Text = "All Time";
             // 
             // pictureBox7
             // 
@@ -486,19 +497,125 @@
             this.pictureBox8.TabIndex = 21;
             this.pictureBox8.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.tbUsername);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Location = new System.Drawing.Point(342, 230);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(959, 465);
+            this.panel2.TabIndex = 21;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(42)))));
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Location = new System.Drawing.Point(0, 177);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(960, 40);
+            this.panel5.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Customers";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(268, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Size";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(455, 8);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Total Product";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(869, 12);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Date";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(664, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 20);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Total Amount";
+            // 
+            // tbUsername
+            // 
+            this.tbUsername.Animated = true;
+            this.tbUsername.AutoRoundedCorners = true;
+            this.tbUsername.BackColor = System.Drawing.Color.Gray;
+            this.tbUsername.BorderColor = System.Drawing.Color.Gray;
+            this.tbUsername.BorderRadius = 18;
+            this.tbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbUsername.DefaultText = "";
+            this.tbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.tbUsername.ForeColor = System.Drawing.Color.Black;
+            this.tbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbUsername.Location = new System.Drawing.Point(775, 129);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceholderText = "Search...";
+            this.tbUsername.SelectedText = "";
+            this.tbUsername.Size = new System.Drawing.Size(173, 39);
+            this.tbUsername.TabIndex = 7;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1336, 733);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.lbltoday3);
+            this.Controls.Add(this.lblAllTime);
             this.Controls.Add(this.lblCustomers);
             this.Controls.Add(this.lbltoday2);
             this.Controls.Add(this.lblRevenue);
@@ -526,6 +643,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -553,7 +673,7 @@
         private System.Windows.Forms.Label lblRevenue;
         private System.Windows.Forms.Label lbltoday2;
         private System.Windows.Forms.Label lblCustomers;
-        private System.Windows.Forms.Label lbltoday3;
+        private System.Windows.Forms.Label lblAllTime;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -564,5 +684,13 @@
         private Guna.UI2.WinForms.Guna2Button btnMenu;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2TextBox tbUsername;
     }
 }
